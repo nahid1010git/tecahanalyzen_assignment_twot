@@ -1,0 +1,380 @@
+
+/* upper tablet... */
+@media screen and (max-width:920px){
+    
+
+    /* header */
+    .inner_header_container nav ul li{
+        display: none;
+    }
+
+    .inner_header_container nav ul .bars{
+        display: block;
+    }
+    
+  
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================tablet section start======================== */
+
+@media screen and (max-width:768px){
+
+
+/* banner */
+
+.inner_banner_container{
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+
+.inner_banner_container .banner_left_content,
+.inner_banner_container .banner_right_image{
+    flex-basis: 100%;
+}
+
+.inner_banner_container .banner_left_content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.inner_banner_container .banner_left_content .banner_title{
+    text-align: justify;
+    font-size: 30px;
+    word-spacing:0%;
+    line-height: 30px;
+}
+
+.inner_banner_container .banner_left_content .banner_description{
+    text-align: justify;
+}
+
+
+.inner_banner_container .banner_left_content .button_fair{
+
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+/* company name */
+
+.company_image_parent .company_image_box{
+    flex-basis: 50%;
+    /* justify-content: space-evenly; */
+    margin-top: 10px;
+
+}
+
+.company_image_parent .box5{
+    flex-basis: 100%;
+    text-align:center;
+    margin-top: 15px;
+    
+}  
+
+/* apps section  */
+
+
+.inner_apps_container{
+  flex-direction: column;
+  height: auto;
+}
+
+.inner_apps_container .left_apps_image_side{
+   flex-basis: 100%;
+}
+
+
+
+.inner_apps_container .right_apps_content_side{
+    flex-basis: 100%;
+}
+
+.right_apps_content_side .apps_right_content_title,
+.right_apps_content_side .apps_right_content_peragraph{
+    text-align: center;
+}
+
+
+
+/* jack pot secton */
+
+.inner_jakpot_content{
+    row-gap: 20px;
+
+}
+
+.inner_jakpot_content .jakpot_title,.inner_jakpot_content .jakpot_pera{
+    flex-basis: 100%;
+  
+}
+
+.mini_jakpot_box_parent{
+    row-gap: 20px;
+}
+
+.mini_jakpot_box_parent .mini_box{
+    flex-basis: 100%;
+
+}
+
+/* intrigration section */
+
+
+.inner_integration .left_image_integration{
+    flex-basis: 100%;
+}
+
+.inner_integration .right_content_integration{
+    flex-basis: 100%;
+    
+}
+
+/* service section  */
+
+.inner_service_box_parent .service_box{
+    flex-basis: 49%;
+}
+
+/* feature section */
+
+
+
+.feature_main_title,.feature_main_pera{
+    text-align: center;
+}
+
+
+
+.inner_feature{
+    row-gap: 50px;
+}
+
+.inner_feature .feature_left_content,.inner_feature .feature_right_image{
+    flex-basis: 100%;
+   
+}
+
+.feature_left_content .feature_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature_left_content .feature_left_content_button{
+    margin: 0px auto;
+}
+
+.inner_feature .feature_right_image{
+    background-color: rgba(0, 255, 255, 0.142);
+    border-radius: 20px;
+}
+
+/* package section */
+
+.package_button_parent .btn{
+    width: 200px;
+}
+
+/* client section  */
+.inner_client{
+    justify-content: center;
+    row-gap: 30px;
+}
+.inner_client .left_client_image_side,.inner_client .right_client_content_side{
+    flex-basis: 100%;
+}
+
+.inner_client .left_client_image_side{
+    height: auto;
+
+}
+.inner_client .right_client_content_side{
+    text-align: center;
+}
+.right_client_content_side .small_image_content_parent{
+
+    justify-content: center;
+}
+
+
+/* review section */
+
+.inner_review_parent{
+    width:fit-content
+}
+
+.middle_title_and_pera_parent{
+    text-align: center;
+}
+.review_common_content_parent{
+    justify-content: space-evenly;
+}
+
+/* download section */
+.inner_download{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.download_left_content .download_left_title,.download_left_content .download_left_pera{
+    text-align: center;
+}
+
+.download_left_content .small_image_parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.inner_download .download_left_content,.inner_download .download_right_image{
+    flex-basis: 100%;
+}
+
+
+/* footer  */
+.footer_nav{
+    flex-direction: column;
+    align-items: center;
+}
+.footer_nav li{
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+.footer_pera{
+    font-size: 18px;
+    word-spacing: ;
+}
+}
+
+
+
+
+
+
+
+
+/* mobile section */
+
+
+@media screen and (max-width:425px){
+
+   /* company section */
+
+    .company_image_parent .company_image_box{
+     
+        flex-basis: 100%;
+        text-align: center;
+    
+    }
+
+    .company_image_parent{
+        row-gap: 10px;
+    }
+
+    /* jackpot section */
+
+    .inner_jakpot_content .jakpot_title,.inner_jakpot_content .jakpot_pera{
+        text-align: center;
+    
+    }
+    .mini_jakpot_box_parent .mini_box{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
+
+
+    /* intrigration section */
+ 
+
+    .inner_integration{
+        row-gap: 20px;
+    }
+    .inner_integration .right_content_integration{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    
+    }
+
+
+    /* service section */
+
+    .inner_service_box_parent .service_box{
+        flex-basis: 100%;
+    }
+
+
+
+    /* feature section */
+
+    .inner_feature .feature_left_content{
+        
+        row-gap: 20px;
+    }
+
+    .feature_left_content .feature_box{
+        flex-basis: 100%;
+       
+    }
+
+
+    /* package section  */
+    
+.package_card_parent{
+    row-gap: 50px;
+}
+    .package_card_parent .left_pack_card,.package_card_parent .right_pack_card{
+        flex-basis: 100%;
+    }
+
+
+    /* review section */
+    .middle_title_and_pera_parent{
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+   
+    .review_common_content_parent{
+     
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+  
+    }
+    .review_common_content_parent .common_content_pera{
+        text-align: center;
+    }
+    
+.review_common_content_parent .common_content_plus_icon{
+    background-color: rgba(0, 255, 255, 0.21);
+    padding: 0px 18px;
+    border-radius: 50%;
+}
+}

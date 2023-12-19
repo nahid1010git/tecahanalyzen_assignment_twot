@@ -1,0 +1,1479 @@
+
+
+/*==============================
+css variables satart from here
+================================*/
+
+
+:root{
+    --primary-color:#2500f9;
+    --primary-text-color:#242f51;
+    --sceondary-text-color:#616368;
+    --button-text-color:#ffffffd3;
+}
+
+
+/*==============================
+css variables end from here
+================================*/
+
+
+
+
+/*=======================
+google font
+=========================*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*================================================
+common css style start from here
+===================================================*/
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+/*================================================
+common css style end from here
+===================================================*/
+
+
+
+
+/*================================================
+ css header section style start from here
+===================================================*/
+
+#header_section{
+    width: 100%;
+}
+
+
+.inner_header_container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.inner_header_container .image_parent{
+
+width: 120px;
+    
+}
+
+.inner_header_container .image_parent img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner_header_container nav{
+
+    padding: 0px 5px;
+}
+.inner_header_container nav ul{
+    display: flex;
+}
+
+.inner_header_container nav ul li{
+    margin-left: 20px;
+}
+
+.inner_header_container nav ul .bars{
+    
+    background-color: #ebb51483;
+    display: none;
+    border-radius: 10px;
+}
+
+.inner_header_container nav ul .bars .header_bars_a{
+    font-size: 25px;
+    padding: 0px 10px;
+  
+    
+}
+
+
+.inner_header_container nav ul li a{
+     text-transform:capitalize;
+    font-size: 16px;
+    line-height: 44px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+.common_button{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+.common_button .inner_button_a{
+    color:var(--button-text-color);
+}
+
+/*================================================
+ css header section style end from here
+===================================================*/
+
+
+
+
+
+/*================================================
+ css banner section style start from here
+===================================================*/
+
+
+#banner_section{
+    background-image: url("./images/banner_bgg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 60px);
+}
+
+
+.inner_banner_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+    flex-wrap: wrap;
+}
+
+.inner_banner_container .banner_left_content{
+    flex-basis: 50%;
+  
+}
+
+.inner_banner_container .banner_left_content .banner_sub_title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 8px;
+    width: 362px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #e2eaed;
+}
+
+
+.inner_banner_container .banner_left_content span{
+  font-size: 18px;
+  line-height: 28px;
+  color: #242f51;
+  font-weight: 400;
+
+  
+}
+
+.inner_banner_container .banner_left_content .banner_title{
+    font-size: 60px;
+line-height: 75px;
+color: #242f51;
+font-weight: 600;
+margin: 25px 0px;
+}
+
+.inner_banner_container .banner_left_content .banner_description{
+    font-size: 18px;
+line-height: 28px;
+color: #616368;
+font-weight: 400;
+margin-bottom: 39px;
+}
+
+.inner_banner_container .banner_left_content .button_fair{
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+}
+
+.inner_banner_container .banner_left_content .button_fair .common_button{
+    height: 57px;
+width: 170px;
+
+
+}
+
+
+.inner_banner_container .banner_left_content .button_fair .inner_button_a{
+    font-size: 16px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.inner_banner_container .banner_left_content .button_fair .scond_button_a{
+font-size: 16px;
+line-height: 44px;
+color: #2500f9;
+font-weight: 400;
+}
+
+
+
+
+
+
+
+
+.inner_banner_container .banner_right_image{
+    flex-basis: 50%;
+}
+
+
+
+.inner_banner_container .banner_right_image img{
+    background-size: cover;
+   background-position: center;
+   width: 100%;
+   
+
+}
+
+
+
+
+
+
+
+
+
+/*================================================
+ css banner section style end from here
+===================================================*/
+
+
+/*================================================
+ css company section style start from here
+===================================================*/
+
+#company_section{
+    margin: 100px 0px;
+
+}
+
+.company_small_title{
+    text-align: center;
+
+}
+
+.company_small_title .small_company_title_peragraph{
+    font-size: 16px;
+   line-height: 28px;
+   color: #242f51;
+   font-weight: 400;
+}
+
+
+.company_image_parent{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+
+}
+
+
+.company_image_parent .company_image_box{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.company_image_parent .box5{}
+
+
+/*================================================
+ css company section style end from here
+===================================================*/
+
+
+
+/*================================================
+ css apps section style start from here
+===================================================*/
+
+#apps_section{
+     margin: 120px 0px;
+     overflow: hidden;
+
+}
+
+.inner_apps_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px;
+  
+}
+
+.inner_apps_container .left_apps_image_side{
+    flex-basis: 50%;
+    overflow: hidden;
+    height: 100%;
+
+}
+.inner_apps_container .left_apps_image_side img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+
+
+}
+
+
+.inner_apps_container .right_apps_content_side{
+    flex-basis: 50%;
+    height: 100%;
+    
+ 
+}
+
+.right_apps_content_side .apps_right_content_title{
+    font-size: 36px;
+line-height: 46px;
+color: #242f51;
+font-weight: 600;
+margin-bottom: 28px;
+}
+
+
+.right_apps_content_side .apps_right_content_peragraph{
+    font-size: 16px;
+line-height: 26px;
+color:var(--sceondary-text-color);
+font-weight: 400;
+margin-bottom: 90px;
+}
+
+
+
+
+.right_apps_content_side .apps_right_content_box_parent{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   row-gap: 60px;
+}
+
+.apps_right_content_box_parent .right_box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.apps_right_content_box_parent .right_box img{
+    width: 88px;
+height: 89px;
+}
+
+
+.apps_right_content_box_parent .right_box .right_content_box_title{
+    font-size: 20px;
+    line-height: 58px;
+}
+
+.apps_right_content_box_parent .right_content_box_peraa{
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+}
+
+.apps_right_content_box_parent .box1 .right_content_box_title{
+  
+    color: #f55767;
+    
+}
+
+
+.apps_right_content_box_parent .box2 .right_content_box_title{
+    color: #2563ff;
+
+}
+
+.apps_right_content_box_parent .box3 .right_content_box_title{
+    color: #40975f;
+}
+
+/*================================================
+ css apps section style end from here
+===================================================*/
+
+
+
+
+
+ 
+/*================================================
+ jakpot section start
+===================================================*/
+
+#jakpot{
+    margin-bottom: 115px;
+}
+
+
+
+
+.inner_jakpot_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+    flex-wrap: wrap;
+}
+
+.inner_jakpot_content .jakpot_title{
+flex-basis: 50%;
+font-size: 40px;
+line-height: 50px;
+color: #242f51;
+font-weight: 600;
+}
+
+.inner_jakpot_content .jakpot_pera{
+flex-basis: 50%;
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+}
+
+
+
+.mini_jakpot_box_parent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mini_jakpot_box_parent .mini_box{
+    flex-basis: 33.33%;
+}
+
+.mini_jakpot_box_parent .mini_box .img_parent_for_mini{
+ width: 88px;
+height: 88px;
+border-radius: 44px;
+}
+
+.mini_jakpot_box_parent .mini_box .img_parent_for_mini img{
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+
+.mini_jakpot_box_parent .mini_box .mini_box_one_title{
+font-size: 20px;
+line-height: 58px;
+color: #f55767;
+font-weight: 600;
+}
+
+  
+.mini_jakpot_box_parent .mini_box .mini_box_two_title{
+    font-size: 20px;
+line-height: 58px;
+color: #2563ff;
+font-weight: 600;
+}
+.mini_jakpot_box_parent .mini_box .mini_box_three_title{
+
+font-size: 20px;
+line-height: 58px;
+color: #40975f;
+font-weight: 600;
+}
+
+.mini_jakpot_box_parent .mini_box .mini_box_pera{
+
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+}
+
+
+
+
+
+
+/*================================================
+ jakpot section end
+===================================================*/
+
+
+
+
+
+/*================================================
+integration section start
+===================================================*/
+
+
+#integration{}
+
+.inner_integration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.inner_integration .left_image_integration{
+    flex-basis: 50%;
+ 
+
+}
+
+.inner_integration .left_image_integration img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+
+
+.inner_integration .right_content_integration{
+    flex-basis: 50%;
+
+}
+
+.right_content_integration .integration_right_title{
+    font-size: 36px;
+line-height: 46px;
+color: #242f51;
+font-weight: 600;
+}
+
+.right_content_integration .integration_right_pera{
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+margin: 20px 0px 40px 0px;
+}
+
+.right_content_integration .integration_right_button{
+width: 170px;
+height: 57px;
+border-radius: 29px;
+background-color: #2500f9;
+}
+
+.right_content_integration .integration_right_button a{
+    font-size: 16px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/*================================================
+integration section end
+===================================================*/
+
+
+
+
+/*================================================
+service section start
+===================================================*/
+
+#service{
+    margin: 150px 0px;
+}
+
+
+.service_main_title{
+    font-size: 36px;
+line-height: 46px;
+color: #242f51;
+font-weight: 600;
+text-align: center;
+}
+
+.service_main_pera{
+
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+margin: 35px 0px 80px 0px;
+}
+
+/* parent */
+.inner_service_box_parent{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 70px;
+    column-gap: 2px;
+    flex-wrap: wrap;
+  
+}
+
+/* box */
+
+.inner_service_box_parent .service_box{
+    flex-basis: 32.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 1px black;
+    border-radius:  5px;
+
+}
+
+
+/* image */
+.inner_service_box_parent .service_box .service_common_image_parent{
+
+width: 88px;
+height: 88px;
+border-radius: 44px;
+background-color: rgba(0, 255, 255, 0.147);
+
+}
+
+.inner_service_box_parent .service_box .service_common_image_parent img{
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+
+/* content */
+
+
+.inner_service_box_parent .service_box .service_box_title{
+
+    font-size: 20px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+}
+
+.inner_service_box_parent .service_box .service_box_peragraph{
+    text-align:justify;
+    text-align-last: center;
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================
+service section end
+===================================================*/
+
+
+
+
+/*================================================
+feature section start
+===================================================*/
+
+#feature{
+
+    margin: 150px 0px;
+}
+
+.feature_main_title{
+    font-size: 36px;
+line-height: 46px;
+color: #242f51;
+font-weight: 600;
+}
+
+.feature_main_pera{
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+margin: 30px 0px 50px 0px;
+}
+
+/* inner box parent */
+
+.inner_feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* left box side */
+
+.inner_feature .feature_left_content{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+
+}
+
+.feature_left_content .feature_box{
+    flex-basis: 49%;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+}
+
+.feature_left_content .feature_box .feature_common_image_parent{
+    width: 88px;
+height: 88px;
+border-radius: 44px;
+background-color: rgba(0, 255, 255, 0.147);
+}
+
+.feature_left_content .feature_box .feature_common_image_parent img{
+
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+
+.feature_left_content .feature_box .feature_box_title{
+
+    
+font-size: 20px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+}
+
+.feature_left_content .feature_box .feature_box_pera{
+    font-size: 16px;
+    line-height: 26px;
+    color: #616368;
+    font-weight: 400;
+}
+
+
+.feature_left_content .feature_left_content_button{
+    width: 170px;
+height: 57px;
+border-radius: 29px;
+background-color: #2500f9;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.feature_left_content .feature_left_content_button a{
+font-size: 16px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 700;
+}
+
+
+
+/* right side */
+
+
+.inner_feature .feature_right_image{
+    flex-basis: 50%;
+}
+
+.inner_feature .feature_right_image img{
+
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+
+
+
+
+
+
+/*================================================
+feature section end
+===================================================*/
+
+
+
+
+/*================================================
+package section start
+===================================================*/
+
+
+#package{
+    margin-bottom: 100px;
+}
+
+.package_main_title{
+    font-size: 36px;
+line-height: 46px;
+color: #242f51;
+font-weight: 600;
+text-align: center;
+}
+
+.package_main_pera{
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+text-align: center;
+margin: 33px 0px 100px 0px;
+}
+
+
+/* buttons */
+
+.package_button_parent{
+text-align: center;
+}
+
+.package_button_parent .btn{
+width: 136px;
+height: 48px;
+border-radius: 24px;
+margin-bottom: 100px;
+
+}
+
+.package_button_parent .btn a{
+font-size: 16px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 700;
+}
+
+.package_button_parent .one{
+
+background-color: #2500f9;
+}
+
+.package_button_parent .two{
+
+background-color:rgba(0, 0, 0, 0.46);
+}
+
+
+
+/* card */
+
+.package_card_parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* upper div */
+.package_card_parent .card_upper_div{}
+
+.package_card_parent .card_upper_div .big_number_content_parent{
+    margin-bottom: 32px;
+  
+}
+
+.package_card_parent .card_upper_div .big_number_content_parent .big_nub{
+font-size: 60px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+
+}
+
+.package_card_parent .card_upper_div .big_number_content_parent .small_num{
+font-size: 18px;
+line-height: 28px;
+color: #999ca5;
+font-weight: 400;
+}
+
+.package_card_parent .card_upper_div .card_title{
+    font-size: 20px;
+line-height: 28px;
+color: #242f51;
+font-weight: 600;
+text-align: center;
+
+}
+
+.package_card_parent .card_upper_div .card_pera{
+font-size: 16px;
+line-height: 28px;
+color: #999ca5;
+font-weight: 400;
+text-align: center;
+
+}
+
+/* bottom div */
+
+.package_card_parent .card_bottom_div{}
+
+.package_card_parent .card_bottom_div .card_same_content{
+font-size: 16px;
+line-height: 48px;
+color: #999ca5;
+font-weight: 400;
+display: block;
+text-align: center;
+}
+
+
+/* two buttons */
+
+.package_card_parent .card_bottom_div .card_bottom_button{
+width: 210px;
+height: 56px;
+border-radius: 28px;
+background-color: #2500f9;
+margin-top: 40px;
+}
+
+.package_card_parent .card_bottom_div .card_bottom_button a{
+font-size: 16px;
+line-height: 28px;
+color: #ffffff;
+font-weight: 600;
+}
+
+
+/* left side */
+
+.package_card_parent .left_pack_card{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+}
+
+
+/* right side */
+
+.package_card_parent .right_pack_card{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+
+ 
+
+}
+
+
+
+/*================================================
+package section end
+===================================================*/
+
+
+
+
+
+
+/*================================================
+client section start
+===================================================*/
+
+
+#client{
+    margin: 250px 0px 170px 0px;
+}
+
+.inner_client{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+/* left side */
+.inner_client .left_client_image_side{
+    flex-basis: 50%;
+    height: 490px;
+    align-self: flex-end;
+
+
+}
+
+.inner_client .left_client_image_side img{
+
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+/* right side */
+
+.inner_client .right_client_content_side{
+
+    flex-basis: 50%;
+
+
+}
+
+
+.right_client_content_side .right_client_title{
+
+font-size: 40px;
+line-height: 50px;
+color: #242f51;
+font-weight: 600;
+}
+
+.right_client_content_side .right_client_pera{
+
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+margin-top: 28px;
+}
+
+
+.right_client_content_side .right_start_parent{
+    margin: 25px 0px 20px 0px;
+}
+
+.right_client_content_side .right_start_parent i{
+font-size: 20px;
+line-height: 58px;
+color: #ffcc00;
+}
+
+
+
+
+.right_client_content_side .right_small_title{
+    font-size: 20px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+}
+
+.right_client_content_side .right_small_pera{
+
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+margin: 20px 0px 30px 0px;
+
+}
+
+
+
+
+
+
+.right_client_content_side .small_image_content_parent{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.right_client_content_side .small_image_content_parent img{}
+
+
+
+
+
+
+/* .right_client_content_side .small_image_content_parent .small_content_parent{} */
+
+.right_client_content_side .small_image_content_parent .small_content_parent .small_name{
+font-size: 18px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+}
+.right_client_content_side .small_image_content_parent .small_content_parent .small_ranke{
+
+font-size: 18px;
+line-height: 28px;
+color: #616368;
+font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*================================================
+client section end
+===================================================*/
+
+
+
+
+
+
+
+
+
+
+/*================================================
+review section start
+===================================================*/
+
+#review{
+    margin: 150px 0px;
+    overflow-y: hidden;
+}
+
+.inner_review_parent{
+    margin: 0px auto;
+    width: 810px;
+
+
+}
+.review_main_titile{
+
+font-size: 40px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+text-align: center;
+}
+
+.review_main_pera{
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+text-align: center;
+margin: 25px 0px 50px 0px;
+}
+
+
+/* middle */
+.middle_title_and_pera_parent{
+    background-color: #f5f7fa;
+    padding: 0px 5px;
+    height: 256px;
+
+}
+
+.middle_title_and_pera_parent .middle_titile{
+font-size: 20px;
+line-height: 58px;
+color: #242f51;
+font-weight: 600;
+}
+
+.middle_title_and_pera_parent .middle_pera{
+    font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+}
+
+
+
+/* bottom */
+
+.review_common_content_parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7fa;
+    padding: 0px 5px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+
+
+}
+
+.review_common_content_parent .common_content_pera{
+    font-size: 20px;
+line-height: 58px;
+color: #242f51;
+font-weight: 500;
+}
+
+.review_common_content_parent .common_content_plus_icon{
+
+    font-size: 20px;
+line-height: 58px;
+color: #242f51;
+}
+
+
+
+
+
+/*================================================
+review section end
+===================================================*/
+
+
+
+
+
+/*================================================
+download section start
+===================================================*/
+
+
+
+#download{}
+
+.inner_download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+/* left side */
+.inner_download .download_left_content{
+    flex-basis: 50%;
+
+}
+
+.download_left_content .download_left_title{
+
+font-size: 40px;
+line-height: 40px;
+color: #242f51;
+font-weight: 600;
+}
+
+.download_left_content .download_left_pera{
+
+
+font-size: 16px;
+line-height: 26px;
+color: #616368;
+font-weight: 400;
+margin: 20px 0px 35px 0px;
+}
+
+
+
+.download_left_content .small_image_parent{}
+
+
+
+
+
+/* right side */
+
+
+.inner_download .download_right_image{
+
+    flex-basis: 50%;
+
+}
+
+.inner_download .download_right_image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*================================================
+download section end
+===================================================*/
+
+
+
+
+
+
+/*================================================
+footer section start
+===================================================*/
+
+
+#footer{
+
+    background-color: #09142e;
+    padding: 80px 0px;
+}
+
+
+.footer_logo{
+    text-align: center;
+    color: white;
+
+}
+
+.footer_logo .colorfull_text{
+color: #fcae61;
+
+}
+
+.footer_logo span{
+font-size: 30px;
+line-height: 44px;
+font-weight: 700;
+}
+
+
+.footer_nav{
+
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 50px 0px;
+}
+
+.footer_nav li{
+font-size: 16px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 400;
+list-style: none;
+}
+
+
+
+
+.icons_parent{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.icons_parent i{
+font-size: 30px;
+letter-spacing: 23px;
+line-height: 44px;
+color: #273043;
+font-weight: 400;
+}
+
+.icons_parent .white_color{
+    color: white;
+}
+
+
+
+
+
+
+.footer_pera{
+text-align: center;
+opacity: 0.212;
+font-size: 14px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*================================================
+footer section end
+===================================================*/
+
